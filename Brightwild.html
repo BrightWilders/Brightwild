@@ -53,9 +53,16 @@
       border-radius: 12px;
     }
 
-    .tool-button {
-      display: inline-block;
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
       margin-top: 20px;
+      width: 300px;
+    }
+
+    .tool-button {
+      display: block;
       padding: 14px 28px;
       background: #0d3b66;
       color: white;
@@ -86,12 +93,23 @@
 
     <div id="current-date"></div>
 
-    <a
-      href="https://brightwilders.github.io/ACTG-GL-Reference-Tool/ACTG-GL.HTML"
-      target="_blank"
-      class="tool-button">
-      GL Reference Tool
-    </a>
+    <div class="button-container">
+
+      <a
+        href="https://brightwilders.github.io/ACTG-GL-Reference-Tool/ACTG-GL.HTML"
+        target="_blank"
+        class="tool-button">
+        GL Reference Tool
+      </a>
+
+      <a
+        href="https://brightwilders.github.io/Simple-Purchase-Tool/Simple%20Purchase%20Tool.html"
+        target="_blank"
+        class="tool-button">
+        Simple Purchase Tool
+      </a>
+
+    </div>
 
   </div>
 
