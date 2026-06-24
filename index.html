@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brightwild Resource Center</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -58,11 +63,15 @@
       flex-direction: column;
       gap: 12px;
       margin-top: 20px;
-      width: 300px;
+      width: 320px;
     }
 
     .tool-button {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
       padding: 14px 28px;
       background: #0d3b66;
       color: white;
@@ -74,13 +83,19 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 
+    .tool-button i {
+      width: 22px;
+      font-size: 18px;
+    }
+
     .tool-button:hover {
       background: #145da0;
       transform: translateY(-3px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.20);
     }
   </style>
 </head>
+
 <body>
 
   <div class="intro">
@@ -99,6 +114,7 @@
         href="https://brightwilders.github.io/ACTG-GL-Reference-Tool/ACTG-GL.HTML"
         target="_blank"
         class="tool-button">
+        <i class="fa-solid fa-file-invoice-dollar"></i>
         GL Reference Tool
       </a>
 
@@ -106,7 +122,16 @@
         href="https://brightwilders.github.io/Simple-Purchase-Tool/Simple%20Purchase%20Tool.html"
         target="_blank"
         class="tool-button">
+        <i class="fa-solid fa-cart-shopping"></i>
         Simple Purchase Tool
+      </a>
+
+      <a
+        href="https://brightwilders.github.io/Entities/"
+        target="_blank"
+        class="tool-button">
+        <i class="fa-solid fa-building"></i>
+        Entity Guide
       </a>
 
     </div>
