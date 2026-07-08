@@ -58,12 +58,27 @@
       border-radius: 12px;
     }
 
+    .section {
+      width: 340px;
+      margin-top: 10px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #0d3b66;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 14px 0 10px;
+      border-bottom: 2px solid #d9e2ec;
+      padding-bottom: 6px;
+    }
+
     .button-container {
       display: flex;
       flex-direction: column;
       gap: 12px;
-      margin-top: 20px;
-      width: 320px;
+      width: 100%;
     }
 
     .tool-button {
@@ -71,7 +86,6 @@
       align-items: center;
       justify-content: center;
       gap: 12px;
-
       padding: 14px 28px;
       background: #0d3b66;
       color: white;
@@ -108,31 +122,63 @@
 
     <div id="current-date"></div>
 
-    <div class="button-container">
+    <!-- ACCOUNTING TOOLS -->
+    <div class="section">
 
-      <a
-        href="https://brightwilders.github.io/ACTG-GL-Reference-Tool/ACTG-GL.HTML"
-        target="_blank"
-        class="tool-button">
-        <i class="fa-solid fa-file-invoice-dollar"></i>
-        GL Reference Tool
-      </a>
+      <div class="section-title">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        Accounting Tools
+      </div>
 
-      <a
-        href="https://brightwilders.github.io/Simple-Purchase-Tool/Simple%20Purchase%20Tool.html"
-        target="_blank"
-        class="tool-button">
-        <i class="fa-solid fa-cart-shopping"></i>
-        Simple Purchase Tool
-      </a>
+      <div class="button-container">
 
-      <a
-        href="https://brightwilders.github.io/Entities/"
-        target="_blank"
-        class="tool-button">
-        <i class="fa-solid fa-building"></i>
-        Entity Guide
-      </a>
+        <a
+          href="https://brightwilders.github.io/ACTG-GL-Reference-Tool/ACTG-GL.HTML"
+          target="_blank"
+          class="tool-button">
+          <i class="fa-solid fa-file-invoice-dollar"></i>
+          Expense Coding Tool
+        </a>
+
+        <a
+          href="https://brightwilders.github.io/Simple-Purchase-Tool/Simple%20Purchase%20Tool.html"
+          target="_blank"
+          class="tool-button">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Simple Purchase Tool
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- REFERENCE GUIDES -->
+    <div class="section">
+
+      <div class="section-title">
+        <i class="fa-solid fa-book-open"></i>
+        Reference Guides
+      </div>
+
+      <div class="button-container">
+
+        <a
+          href="https://brightwilders.github.io/Entities/"
+          target="_blank"
+          class="tool-button">
+          <i class="fa-solid fa-building"></i>
+          Entity Guide
+        </a>
+
+        <a
+          href="https://brightwilders.github.io/FFE-Definitions/"
+          target="_blank"
+          class="tool-button">
+          <i class="fa-solid fa-clipboard-list"></i>
+          FF&E Coding Guide
+        </a>
+
+      </div>
 
     </div>
 
