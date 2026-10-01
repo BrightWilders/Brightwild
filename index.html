@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Brightwild Resource Center</title>
 
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
 
   <style>
+
     body {
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(135deg, #f4f7fa, #e9eef5);
@@ -143,6 +149,7 @@
     }
 
     @media (max-width: 500px) {
+
       body {
         padding: 24px;
       }
@@ -160,110 +167,217 @@
         white-space: normal;
         font-size: 18px;
       }
+
     }
+
   </style>
+
 </head>
+
 
 <body>
 
   <div class="intro">
 
+
+    <!-- =========================
+         TITLE
+    ========================== -->
+
     <div class="main-title">
       Brightwild Resource Center
     </div>
+
+
+    <!-- =========================
+         QUOTE
+    ========================== -->
 
     <div class="quote">
       Dominate the Day, Brightwilders
     </div>
 
-    <img src="Brightwild_Workable_1200x1200.png" alt="Brightwild Logo">
+
+    <!-- =========================
+         LOGO
+    ========================== -->
+
+    <img
+      src="Brightwild_Workable_1200x1200.png"
+      alt="Brightwild Logo"
+    >
+
+
+    <!-- =========================
+         DATE & TIME
+    ========================== -->
 
     <div id="current-date"></div>
+
+
+    <!-- =========================
+         ACCOUNTING TOOLS
+    ========================== -->
 
     <div class="section">
 
       <div class="section-title tools-title">
+
         <i class="fa-solid fa-screwdriver-wrench"></i>
+
         Accounting Tools
+
       </div>
 
+
       <div class="button-container">
+
+
+        <!-- EXPENSE CODING TOOL -->
 
         <a
           href="https://brightwilders.github.io/Expense-Coding-Tool/"
           target="_blank"
-          class="tool-button tools-button">
+          class="tool-button tools-button"
+        >
+
           <i class="fa-solid fa-file-invoice-dollar"></i>
+
           Expense Coding Tool
+
         </a>
 
+
+        <!-- GUEST REFUND CALCULATOR -->
+
         <a
-          href="https://brightwilders.github.io/Simple-Purchase-Tool/Simple%20Purchase%20Tool.html"
+          href="https://brightwilders.github.io/Guest-Refund-Calculator/"
           target="_blank"
-          class="tool-button tools-button">
-          <i class="fa-solid fa-cart-shopping"></i>
-          Simple Purchase Tool
+          class="tool-button tools-button"
+        >
+
+          <i class="fa-solid fa-calculator"></i>
+
+          Guest Refund Calculator
+
         </a>
+
 
       </div>
 
     </div>
+
+
+    <!-- =========================
+         REFERENCE GUIDES
+    ========================== -->
 
     <div class="section">
 
       <div class="section-title reference-title">
+
         <i class="fa-solid fa-book-open"></i>
+
         Reference Guides
+
       </div>
 
+
       <div class="button-container">
+
+
+        <!-- ENTITY GUIDE -->
 
         <a
           href="https://brightwilders.github.io/Entities/"
           target="_blank"
-          class="tool-button reference-button">
+          class="tool-button reference-button"
+        >
+
           <i class="fa-solid fa-building"></i>
+
           Entity Guide
+
         </a>
+
+
+        <!-- CODING REFERENCE -->
 
         <a
           href="https://brightwilders.github.io/Coding-Reference/"
           target="_blank"
-          class="tool-button reference-button">
+          class="tool-button reference-button"
+        >
+
           <i class="fa-solid fa-clipboard-list"></i>
+
           Coding Reference
+
         </a>
+
 
       </div>
 
     </div>
 
+
   </div>
 
+
+  <!-- =========================
+       DATE & TIME SCRIPT
+  ========================== -->
+
   <script>
+
     function updateDateTime() {
+
       const now = new Date();
 
+
       const dateOptions = {
+
         weekday: 'long',
         year: 'numeric',
         month: 'long',
         day: 'numeric'
+
       };
 
+
       const timeOptions = {
+
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit'
+
       };
 
+
       document.getElementById("current-date").textContent =
-        `${now.toLocaleDateString(undefined, dateOptions)} • ${now.toLocaleTimeString(undefined, timeOptions)}`;
+
+        `${now.toLocaleDateString(
+          undefined,
+          dateOptions
+        )} • ${now.toLocaleTimeString(
+          undefined,
+          timeOptions
+        )}`;
+
     }
 
+
     updateDateTime();
-    setInterval(updateDateTime, 1000);
+
+
+    setInterval(
+      updateDateTime,
+      1000
+    );
+
   </script>
 
+
 </body>
+
 </html>
